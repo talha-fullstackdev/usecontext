@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 999.99,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "price": 699.99,
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Headphones",
+    "price": 199.99,
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "name": "Monitor",
+    "price": 249.99,
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Keyboard",
+    "price": 49.99,
+    "inStock": false
+  }
+]

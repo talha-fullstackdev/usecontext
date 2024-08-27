@@ -1,0 +1,11 @@
+.instock{
+    color: green;
+}
+.outof-stock{
+    color:red
+}
+.container{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
