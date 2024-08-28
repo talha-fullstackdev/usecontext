@@ -13,8 +13,8 @@ const AddTask = ({ tasks, setTasks }) => {
       name: task,
       completed: Boolean(progress),
     };
-    setTasks((prev) => [...prev, data]);
-    setTask("");
+   task ? setTasks((prev) => [...prev, data]):alert("fill task to add")
+    handleReset()
   };
   return (
     <div className="p-4 bg-gray-100 rounded-lg shadow-md">
