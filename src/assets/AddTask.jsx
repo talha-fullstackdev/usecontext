@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const AddTask = ({ tasks, setTasks }) => {
+const AddTask = ({ setTasks }) => {
   const [task, setTask] = useState("");
   const [progress, setProgress] = useState(false);
   const handleReset = () => {
@@ -64,7 +64,6 @@ const AddTask = ({ tasks, setTasks }) => {
     </div>
   );
 };
-
 export default AddTask;
 
 

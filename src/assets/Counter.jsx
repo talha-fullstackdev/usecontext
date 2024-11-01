@@ -10,5 +10,4 @@ const Counter = () => {
     </div>
   );
 };
-
 export default Counter;

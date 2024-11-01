@@ -2,17 +2,16 @@ import React, { useMemo, useState } from "react";
 const UseMemo = () => {
   const [add, setAdd] = useState(0);
   const [subtract, setSubtract] = useState(0);
-  const multiply = useMemo(
-    function multiplication() {
+  useMemo(
+    //here usememo  memoisze the function to prevent it  from unnecessary rendering it will render in first run paint and then when its dependency changes it will again paint itlself
+    function CallAdd() {
       console.log("Add  has been called");
-      return add * 10;
     },
     [add]
   );
-  const minus = useMemo(
-    function subtraction() {
+  useMemo(
+    function CallSubtraction() {
       console.log("Subtraction has been called");
-      return subtract * 10;
     },
     [subtract]
   );
@@ -22,8 +21,6 @@ const UseMemo = () => {
       <h1>{add}</h1>
       <button onClick={() => setSubtract(subtract - 1)}>Subtract</button>
       <h1>{subtract}</h1>
-      {multiply}
-      {minus}
     </div>
   );
 };
