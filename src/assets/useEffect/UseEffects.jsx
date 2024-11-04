@@ -3,10 +3,12 @@ import "./useeffect.css";
 const UseEffects = () => {
   const [data, setData] = useState();
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
-      .then((response) => response.json())
-      .then((actualData) => setData(actualData));
-    console.log(data);
+    const getData = async () => {
+      let result = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+      result = await result.json();
+      setData(result);
+    };
+    getData();
   }, []);
   console.log(data);
   return (

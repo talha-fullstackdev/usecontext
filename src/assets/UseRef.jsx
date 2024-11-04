@@ -12,8 +12,8 @@ const UseRef = () => {
   };
   return (
     <div>
-      <input type="text" ref={inputOneRef} placeholder="enter number one" />
-      <input type="text" ref={inputTwoRef} placeholder="enter number two" />
+      <input type="text" ref={inputOneRef} placeholder="enter number one"  />
+      <input type="text" ref={inputTwoRef} placeholder="enter number two"  />
       <button onClick={() => handleButton()}>Add</button>
       <p>{value}</p>
     </div>

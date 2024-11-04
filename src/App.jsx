@@ -8,7 +8,7 @@ import AddTask from "./assets/AddTask";
 import ShowTask from "./assets/ShowTask";
 import { useState } from "react";
 import EventPropagation from "./assets/EventPropagation";
-// import UseEffects from "./assets/useEffect/UseEffects";
+import UseEffects from "./assets/useEffect/UseEffects";
 // import ShowCounter from "./components/ShowCounter";
 import Challenge1 from "./assets/thapa-challanges/Challenge1";
 // import ComA from "./contextapi/ComA";
@@ -34,7 +34,7 @@ const App = () => {
   
       {/* <AddTask tasks={tasks} setTasks={setTasks} />
       <ShowTask tasks={tasks} setTasks={setTasks} /> */}
-      {/* <UseEffects/> */}
+      <UseEffects/>
       {/* <ShowCounter/> */}
       {/* <EventPropagation/> */}
       {/* <Challenge1/> */}
@@ -42,7 +42,7 @@ const App = () => {
       {/* <Search/> */}
       {/* <ParentComp/> */}
       {/* <CurrencyConverter/> */}
-      <Formik/>
+      {/* <Formik/> */}
     </div>
   );
 };
