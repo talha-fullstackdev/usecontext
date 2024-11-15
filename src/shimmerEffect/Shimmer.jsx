@@ -67,7 +67,7 @@
 // export default Shimmer;
 /////////////////////
 import React, { useEffect, useState } from "react";
-import Skeleton from "react-loading-skeleton";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 const Shimmer = () => {
@@ -106,9 +106,11 @@ const Shimmer = () => {
         // Display 10 skeleton loaders with varying widths to simulate content size
         <ul>
           {Array.from({ length: 10 }).map((_, index) => (
+            <SkeletonTheme highlightColor="#e8ffd1">
             <li key={index} className="list_style">
-              <Skeleton width={`${Math.floor(Math.random() * (200 - 100) + 230)}px`}  />
+              <Skeleton circle={true} width={`${Math.floor(Math.random() * (200 - 100) + 230)}px`} height="20px" />
             </li>
+            </SkeletonTheme>
           ))}
         </ul>
       )}
