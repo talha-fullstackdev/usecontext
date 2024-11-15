@@ -16,6 +16,7 @@ import Search from "./photosearch/Search";
 import ParentComp from "./assets/useState/ParentComp";
 import CurrencyConverter from "./currency-converter/CurrencyConverter";
 import Formik from "./formik/Formik";
+import Shimmer from "./shimmerEffect/Shimmer";
 import "./index.css"
 //////////////////////////////////////////////////////////////
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
   
       {/* <AddTask tasks={tasks} setTasks={setTasks} />
       <ShowTask tasks={tasks} setTasks={setTasks} /> */}
-      <UseEffects/>
+      {/* <UseEffects/> */}
       {/* <ShowCounter/> */}
       {/* <EventPropagation/> */}
       {/* <Challenge1/> */}
@@ -43,6 +44,7 @@ const App = () => {
       {/* <ParentComp/> */}
       {/* <CurrencyConverter/> */}
       {/* <Formik/> */}
+      <Shimmer/>
     </div>
   );
 };
