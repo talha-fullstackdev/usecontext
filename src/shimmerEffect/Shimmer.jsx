@@ -76,14 +76,16 @@ const Shimmer = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        let response = await fetch("https://jsonplaceholder.typicode.com/todos");
-        const result = await response.json();
-        setData(result);
-      } catch (err) {
-        setError(err.message);
-        console.error("Error fetching data:", err.message);
-      }
+      setTimeout(async () => {
+        try {
+          let response = await fetch("https://jsonplaceholder.typicode.com/todos");
+          const result = await response.json();
+          setData(result);
+        } catch (err) {
+          setError(err.message);
+          console.error("Error fetching data:", err.message);
+        }
+      }, 2000);
     };
 
     fetchData();
@@ -95,17 +97,17 @@ const Shimmer = () => {
       {error ? (
         <p>Error: {error}</p>
       ) : data ? (
-        <ul>
+        <ul className="list-none">
           {data.slice(0, 10).map((item) => (
-            <li key={item.id}>{item.title}</li>
+            <li className="list_style" key={item.id}>{item.title}</li>
           ))}
         </ul>
       ) : (
-        // Display 10 skeleton loaders while data is loading
+        // Display 10 skeleton loaders with varying widths to simulate content size
         <ul>
           {Array.from({ length: 10 }).map((_, index) => (
-            <li key={index}>
-              <Skeleton  />
+            <li key={index} className="list_style">
+              <Skeleton width={`${Math.floor(Math.random() * (200 - 100) + 230)}px`}  />
             </li>
           ))}
         </ul>
@@ -115,3 +117,5 @@ const Shimmer = () => {
 };
 
 export default Shimmer;
+
+
