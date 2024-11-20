@@ -17,6 +17,9 @@ import ParentComp from "./assets/useState/ParentComp";
 import CurrencyConverter from "./currency-converter/CurrencyConverter";
 import Formik from "./formik/Formik";
 import Shimmer from "./shimmerEffect/Shimmer";
+import UseEffect from "./useeffect/UseEffect";
+import UseState from "./assets/states/UseState";
+import IsFruit from "./assets/IsFruit";
 import "./index.css"
 //////////////////////////////////////////////////////////////
 const App = () => {
@@ -44,7 +47,10 @@ const App = () => {
       {/* <ParentComp/> */}
       {/* <CurrencyConverter/> */}
       {/* <Formik/> */}
-      <Shimmer/>
+      {/* <Shimmer/> */}
+      {/* <UseEffect/> */}
+      {/* <UseState/> */}
+      <IsFruit/>
     </div>
   );
 };
