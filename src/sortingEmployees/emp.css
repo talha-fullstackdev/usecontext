@@ -1,0 +1,18 @@
+.emp-container{
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.emp{
+    border: 2px solid black;
+    padding: 10px;
+}
+.btn{
+    background-color: lightblue;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+
+}

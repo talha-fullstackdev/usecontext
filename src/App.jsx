@@ -20,6 +20,7 @@ import Shimmer from "./shimmerEffect/Shimmer";
 import UseEffect from "./useeffect/UseEffect";
 import UseState from "./assets/states/UseState";
 import IsFruit from "./assets/IsFruit";
+import SortingEmployees from "./sortingEmployees/SortingEmployees";
 import "./index.css"
 //////////////////////////////////////////////////////////////
 const App = () => {
@@ -50,7 +51,8 @@ const App = () => {
       {/* <Shimmer/> */}
       {/* <UseEffect/> */}
       {/* <UseState/> */}
-      <IsFruit/>
+      {/* <IsFruit/> */}
+      <SortingEmployees/>
     </div>
   );
 };
