@@ -21,6 +21,7 @@ import UseEffect from "./useeffect/UseEffect";
 import UseState from "./assets/states/UseState";
 import IsFruit from "./assets/IsFruit";
 import SortingEmployees from "./sortingEmployees/SortingEmployees";
+import Sass from "./scss/Sass";
 import "./index.css"
 //////////////////////////////////////////////////////////////
 const App = () => {
@@ -52,7 +53,8 @@ const App = () => {
       {/* <UseEffect/> */}
       {/* <UseState/> */}
       {/* <IsFruit/> */}
-      <SortingEmployees/>
+      {/* <SortingEmployees/> */}
+      <Sass/>
     </div>
   );
 };
