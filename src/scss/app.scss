@@ -1,8 +1,8 @@
 @import "_colors"; // this way we import partial files which contains all the variables which are holding element properties and just use that variables here
-// note if we have two files that contain some coomman properties so the file which is recenlty imported this file properties will appplied ,to avoid this import file using @use "_colors" this way import both the file and treeat them as object to apply property like _color.main ,color_2.main
-body{
-    color: $color1;
-}
+// note if we have two files that contain some common properties so the file which is recenlty imported this file properties will appplied ,to avoid this import file using @use "_colors" this way import both the file and treat them as object to apply property like _color.main ,color_2.main
+// body{
+//     color: $color1;
+// }
 .main_div{
     max-width: $card_dimensions;
     background-color: $background_color;
@@ -14,22 +14,22 @@ body{
 }
 .heading{
    color: $heading_color;
-   font-size: nth($list:$font_size , $n:5 ); // this way we use array variables here in list provide the name of the array and in $n provide the index of the element which is starting from 1
+   font-size: nth($list: $font_size , $n: 5 ); // this way we use array variables here in list provide the name of the array and in $n provide the index of the element which is starting from 1
 }
 .para{
     color:$para_color;
-    font-size: nth($list: $font_size, $n:4 );
-}
+    font-size: nth($list: $font_size, $n: 4 );
+} 
 .btn1{
     background-color: $button_color;
     color: red;
     padding: 10px;
-    font-size: nth($list: $font_size, $n:3 );
+    font-size: nth($list: $font_size, $n: 3 );
     margin-right:10px;
     border-radius: 10px;
     cursor: pointer;
 }
-.btn2{ // this way we use the properties from another element  this is a good way to avoid duplicacy (both buttons havenow same styling;
+.btn2{ // this way we use the properties from another element  this is a good way to avoid duplicacy (both buttons have now same styling;
     @extend .btn1
 }
 .import_color{

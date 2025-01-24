@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -15,7 +16,7 @@ const Shimmer = () => {
           setData(result);
         } catch (err) {
           setError(err.message);
-          console.error("Error fetching data:", err.message);
+          // console.error("Error fetching data:", err.message);
         }
       }, 2000);
     };

@@ -11,7 +11,7 @@ import EventPropagation from "./assets/EventPropagation";
 import UseEffects from "./assets/useEffect/UseEffects";
 // import ShowCounter from "./components/ShowCounter";
 import Challenge1 from "./assets/thapa-challanges/Challenge1";
-// import ComA from "./contextapi/ComA";
+import ComA from "./contextapi/ComA";
 import Search from "./photosearch/Search";
 import ParentComp from "./assets/useState/ParentComp";
 import CurrencyConverter from "./currency-converter/CurrencyConverter";
@@ -23,6 +23,11 @@ import IsFruit from "./assets/IsFruit";
 import SortingEmployees from "./sortingEmployees/SortingEmployees";
 import Sass from "./scss/Sass";
 import "./index.css"
+import PostAPIMethod from "./post_api/PostAPIMethod";
+import Counter from "./custom_hook/Counter.jsx" 
+
+import ApiCheck from "./ApiCheck.jsx";
+// import Api from "./Api.jsx";
 //////////////////////////////////////////////////////////////
 const App = () => {
   // const [tasks, setTasks] = useState([
@@ -31,30 +36,11 @@ const App = () => {
   // ]);
   return (
     <div>
-      {/* <ComA /> */}
-      {/* <UseReducer/> */}
-      {/* <UseRef/> */}
-      {/* <UseEffect/> */}
-      {/* <UseMemo/> */}
-      {/* <ComOne/> */}
-  
-      {/* <AddTask tasks={tasks} setTasks={setTasks} />
-      <ShowTask tasks={tasks} setTasks={setTasks} /> */}
-      {/* <UseEffects/> */}
-      {/* <ShowCounter/> */}
-      {/* <EventPropagation/> */}
-      {/* <Challenge1/> */}
-      {/* <ComA/> */}
-      {/* <Search/> */}
-      {/* <ParentComp/> */}
-      {/* <CurrencyConverter/> */}
-      {/* <Formik/> */}
-      {/* <Shimmer/> */}
-      {/* <UseEffect/> */}
-      {/* <UseState/> */}
-      {/* <IsFruit/> */}
-      {/* <SortingEmployees/> */}
-      <Sass/>
+   {/* <Counter/> */}
+   {/* <APICheck/> */}
+   {/* <ApiCheck/> */}
+   <ComA/>
+   {/* <Api/> */}
     </div>
   );
 };
