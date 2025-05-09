@@ -1,4 +1,4 @@
-import React from "react";
+
 const Api = () => {
   const fetchApi = async () => {
     let resonse = await fetch("http://localhost:3000/");
