@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import useTitle from './UseTitle';
-useTitle("fetch data from backend")
+
 const ApiCheck = () => {
+  useTitle("fetch data from backend")
   const [apiData, setApiData] = useState([]);
 
   const getData = async () => {
