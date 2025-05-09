@@ -25,8 +25,9 @@ import Sass from "./scss/Sass";
 import "./index.css"
 import PostAPIMethod from "./post_api/PostAPIMethod";
 import Counter from "./custom_hook/Counter.jsx" 
-
+import Example from "./assets/Example.jsx";
 import ApiCheck from "./ApiCheck.jsx";
+import Rotation from "./rotation/Rotation.jsx";
 // import Api from "./Api.jsx";
 //////////////////////////////////////////////////////////////
 const App = () => {
@@ -39,8 +40,10 @@ const App = () => {
    {/* <Counter/> */}
    {/* <APICheck/> */}
    {/* <ApiCheck/> */}
-   <ComA/>
+   {/* <ComA/> */}
    {/* <Api/> */}
+   {/* <Example/> */}
+   <Rotation/>
     </div>
   );
 };

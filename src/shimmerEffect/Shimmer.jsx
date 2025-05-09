@@ -1,5 +1,4 @@
-
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 const Shimmer = () => {
@@ -45,7 +44,7 @@ const Shimmer = () => {
             <span>please</span> <span>wait </span>
           </h1>
           {Array.from({ length: 10 }).map((_, index) => (
-            <SkeletonTheme highlightColor="#C0C0C0">
+            <SkeletonTheme highlightColor="#C0C0C0" key={index}>
               <li key={index} className="list_style">
                 <Skeleton
                   circle={false}

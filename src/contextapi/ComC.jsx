@@ -13,18 +13,18 @@
 // };
 // export default ComC;
 
-import React from 'react'
-import { myContext } from './ComA'
-import { useContext } from 'react'
+import React from "react";
+import { myContext } from "./ComA";
+import { useContext } from "react";
 const ComC = () => {
-  const {myDetails} = useContext(myContext)
-  const {name,age,gender} = myDetails
+  const { myDetails } = useContext(myContext);
+  const { name, age, gender } = myDetails;
   return (
     <div>
       <p>name:{name}</p>
       <p>age:{age}</p>
       <p>name:{gender}</p>
     </div>
-  )
-}
-export default ComC
+  );
+};
+export default ComC;

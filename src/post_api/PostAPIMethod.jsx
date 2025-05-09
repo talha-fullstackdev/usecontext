@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import useTitle from "../UseTitle";
 const PostAPIMethod = () => {
   useTitle("post api");

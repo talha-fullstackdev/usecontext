@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 const UseMemo = () => {
   const [add, setAdd] = useState(0);
   const [subtract, setSubtract] = useState(0);
   useMemo(
-    //here usememo  memoisze the function to prevent it  from unnecessary rendering it will render in first run paint and then when its dependency changes it will again paint itlself
+    //here useMemo  memoisze the function to prevent it  from unnecessary rendering it will render in first run  and then when its dependency changes it will again paint itlself
     function CallAdd() {
       console.log("Add  has been called");
     },

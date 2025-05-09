@@ -1,5 +1,4 @@
 import React from "react";
-
 const IsFruit = () => {
   const fruits = [
     { name: "apple", isFruite: true },

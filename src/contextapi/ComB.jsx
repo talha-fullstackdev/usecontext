@@ -12,17 +12,17 @@
 //   );
 // };
 // export default ComB;
-import React from 'react'
-import { useContext } from 'react'
-import { myContext } from './ComA'
+import React from "react";
+import { useContext } from "react";
+import { myContext } from "./ComA";
 const ComB = () => {
-const {count,handleInc,handleDec} = useContext(myContext)
+  const { count, handleInc, handleDec } = useContext(myContext);
   return (
     <div>
       <h1>{count}</h1>
       <button onClick={handleInc}>Increment</button>
       <button onClick={handleDec}>decrement</button>
     </div>
-  )
-}
-export default ComB
+  );
+};
+export default ComB;

@@ -4,7 +4,7 @@ const UseEffect = () => {
   const [subtract, setsubtract] = useState(0);
   useEffect(() => {
     setTimeout(() => {
-      alert(`add has been called`);
+      alert(`Add has been called`);
     }, 2000);
   }, [count]);
   useEffect(() => {
@@ -20,7 +20,6 @@ const UseEffect = () => {
         click subtract button
       </button>
     </>
-   
   );
 };
 

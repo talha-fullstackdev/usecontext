@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { methodsContext } from "./ComOne";
 const BioData = () => {
-  const {myDetails} = useContext(methodsContext);
+  const { myDetails } = useContext(methodsContext);
   return (
     <div>
       <h1>{`My name is ${myDetails.name}`}</h1>
