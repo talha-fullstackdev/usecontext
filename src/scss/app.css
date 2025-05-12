@@ -27,6 +27,12 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.btn1:hover, .btn2:hover {
+  color: aqua;
+}
+.btn1::after, .btn2::after {
+  content: "hello";
+}
 
 .import_color {
   color: rgb(8, 99, 27);

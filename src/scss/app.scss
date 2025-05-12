@@ -30,8 +30,15 @@
   padding: 10px;
   font-size: nth($list: $font_size, $n: 3);
   margin-right: 10px;
-  border-radius: 10px;
+  border-radius: 10px; 
   cursor: pointer;
+  &:hover{ // adding hover on element like this
+    color: aqua
+  }
+  &::after{
+    content: "hello"
+
+  }
 }
 .btn2 {
   // this way we use the properties from another element  this is a good way to avoid duplicacy (both buttons have now same styling;
@@ -41,7 +48,7 @@
   color: $heading; // using color from imported file _colors
 }
 // making functions like this
-@mixin customFunction($bg_color, $color) {
+@mixin customFunction($bg_color, $color) { // we also pass parameters here in fnction to use different values 
   max-width: 500px;
   padding: 10px;
   background-color: $bg_color;
