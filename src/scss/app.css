@@ -1,0 +1,40 @@
+.main_div {
+  max-width: 500px;
+  background-color: lightblue;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.main_div > .btn {
+  color: rgb(226, 10, 10);
+}
+
+.heading {
+  color: red;
+  font-size: 32px;
+}
+
+.para {
+  color: green;
+  font-size: 28px;
+}
+
+.btn1, .btn2 {
+  background-color: rgb(41, 41, 175);
+  color: rgb(56, 78, 34);
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.import_color {
+  color: rgb(8, 99, 27);
+}
+
+.paragraph1 {
+  max-width: 500px;
+  padding: 10px;
+  background-color: lightblue;
+  color: rgb(99, 0, 0);
+}/*# sourceMappingURL=app.css.map */
