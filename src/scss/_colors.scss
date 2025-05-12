@@ -1,16 +1,16 @@
 // to make partial files put _ (underscore) before file name
 // making variables in scss like this put dollor symbol before variable name , making variables for resuing same styles in different elements
 // here we define all the variables in a separte file and then export it to main file to use them , this is beacuse this way our file look more clean
-$heading:rgb(8, 99, 27);
-$color1:rgb(226, 10, 10);
-$color2:rgb(56,78,34);
-$color3:rgb(56,78,34);
-$heading_color:red;
-$para_color:green;
-$bg_color:rgb(161, 52, 156);
-$color:yellow;
-$background_color:lightblue;
-$button_color:rgb(41, 41, 175);
-$card_dimensions:500px;
+$heading: rgb(8, 99, 27);
+$color1: rgb(226, 10, 10);
+$color2: rgb(56, 78, 34);
+$color3: rgb(56, 78, 34);
+$heading_color: red;
+$para_color: green;
+$bg_color: rgb(161, 52, 156);
+$color: yellow;
+$background_color: lightblue;
+$button_color: rgb(41, 41, 175);
+$card_dimensions: 500px;
 // also made a array like this to combine different properties in a single variable // the index here start from one
-$font_size:12px,14px,16px,28px,32px; // array of different  font sizes (dont use [] bracets )
+$font_size: 12px, 14px, 16px, 28px, 32px; // array of different  font sizes (dont use [] bracets )

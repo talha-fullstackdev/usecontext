@@ -1,6 +1,5 @@
 import  { useState, useEffect } from 'react';
 import useTitle from './UseTitle';
-
 const ApiCheck = () => {
   useTitle("fetch data from backend")
   const [apiData, setApiData] = useState([]);
