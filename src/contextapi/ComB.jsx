@@ -12,7 +12,7 @@
 //   );
 // };
 // export default ComB;
-import React from "react";
+
 import { useContext } from "react";
 import { myContext } from "./ComA";
 const ComB = () => {

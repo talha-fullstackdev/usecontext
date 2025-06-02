@@ -33,14 +33,13 @@
 // };
 // export default ComA;
 // export { myContext };
-import React from "react";
+
 import { useState } from "react";
 import { createContext } from "react";
 import ComB from "./ComB.jsx";
 import ComC from "./ComC.jsx";
 const myContext = createContext();
 const ComA = () => {
-  
   const [count, setCount] = useState(0);
   const handleInc = () => {
     setCount(count + 1);
@@ -58,8 +57,8 @@ const ComA = () => {
     setCount,
     handleInc,
     handleDec,
-    myDetails
-  }
+    myDetails,
+  };
   return (
     <div>
       <myContext.Provider value={data}>
@@ -69,6 +68,5 @@ const ComA = () => {
     </div>
   );
 };
-export {myContext}
+export { myContext };
 export default ComA;
-
